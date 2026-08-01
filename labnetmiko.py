@@ -59,8 +59,6 @@ r2_cmds = [
     'exit'
 ]
 
-# -- ชุดคำสั่งรักษาความปลอดภัย (ใช้เหมือนกันทุกอุปกรณ์) --
-# แก้ไข Network IP ของฝั่ง Management และ Lab306
 security_cmds = [
     'ip access-list standard MGT_ONLY',
     'permit 172.31.1.0 0.0.0.15',       # Network วง Management
