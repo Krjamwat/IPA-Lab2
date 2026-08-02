@@ -35,7 +35,8 @@ r2_cmds = [
     'network 2.2.2.2 0.0.0.0 area 0',
     'default-information originate always', #แจกเส้นทาง Default Route ให้กับ Router ตัวอื่นๆ ในวง OSPF
     'exit',
-
+    
+    'ip route vrf control-data 172.31.1.0 255.255.255.0 Null0',
     'ip route vrf control-data 0.0.0.0 0.0.0.0 GigabitEthernet0/3 192.168.42.1',
     #PAT
     'access-list 1 permit any',
